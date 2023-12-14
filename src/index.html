@@ -9,5 +9,38 @@
 
 <body>
   <script src="index.js" type="module"></script>
+  <section class="analizador-de-texto">
+    <header>
+      <h1>Analizador de Texto</h1>
+    </header>
+    <textarea name="user-input" placeholder="Escriba aqui..."></textarea>
+    <section class="analisis">
+      <h2>Analisis:</h2>
+      <ul class="analisis-lista">
+        <li data-testid="word-count">
+          <p>Numero de palabras:</p>
+        </li>
+        <li data-testid="character-count">
+          <p>Caracteres:</p>
+        </li>
+        <li data-testid="character-no-spaces-count">
+          <p>Caracteres sin espacio:</p>
+        </li>
+        <li data-testid="number-count">
+          <p>Numeros:</p>
+        </li>
+        <li data-testid="number-sum">
+          <p>Suma de numeros:</p>
+        </li>
+        <li data-testid="word-lenght-average">
+          <p>Promedio longitud:</p>
+        </li>
+      </ul>
+    </section>
+      <button id="reset-button">Resetear valores</button>
+  </section>
 </body>
+<footer>
+  <p>Por: Gabriela Ramos</p>
+</footer>
 </html>

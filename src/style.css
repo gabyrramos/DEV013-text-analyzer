@@ -1,0 +1,75 @@
+
+/* header y footer tienen que ser estilizados con selectores de tipo*/
+h1{
+    color: darkmagenta;
+    font: sans-serif;
+    font-size: 35px;
+    text-align: center;   
+}
+h2{
+    margin-left: 210px;
+    color: rgb(204, 135, 206);
+}
+p{
+    color: rgb(136, 25, 114);
+}
+
+/* los <li> tienen que ser estilizados con selectores de class no por tag? AUN POR ARREGLAR!*/
+li {
+    color:darkmagenta
+}
+
+/* el <textarea> tiene que ser estilizado con selectores de atributo usando el atributo name? no el tag?*/
+textarea {
+    resize: none;
+    background-color: rgb(249, 237, 249);
+    padding: 1em;
+    border: 1.5px;
+    border-radius: 15px;
+    outline-color: rgb(219, 193, 243);
+    font-style: normal;
+    font-family: sans-serif;
+    line-height: 1.4;
+    width: 500px;
+    height: 250px;
+    display: block;
+    margin: auto;
+}
+
+/* el <button> tiene que ser estilizado con selectores CSS de ID con el atributo id en el valor reset-button */
+#reset-button{
+    background: darkmagenta;
+    color:white;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    display: block;
+    margin: auto; 
+}
+#reset-button:hover{
+background-color: rgb(244, 182, 244);
+}
+
+/* FALTA POR HACER: lograr que cada lista muestre numeros */ 
+.analisis-lista {
+    border: 3px solid #fcf5fa;
+    border-radius: 20px;
+    padding: 5px;
+    display: block;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+.analisis-lista li{
+    display: flex;
+    margin: 1.5px;
+    padding: 0;
+    align-items: center;
+    line-height: 0.5;
+}
+
+footer{
+    font-size: 20px;
+    text-align: right;
+    margin-right: 50px;
+}
