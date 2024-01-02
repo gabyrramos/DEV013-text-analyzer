@@ -1,0 +1,92 @@
+/*La aplicación usa selectores CSS de tipo para darle estilo al <header> y al <footer>.✅
+
+ La aplicación usa selectores CSS de class para darle estilo a los <li> descrito anteriormente.✅
+
+ La aplicación usa selectores de atributo para darle estilo al <textarea> usando el atributo name.✅
+
+ La aplicación usa selectores CSS de ID para darle estilo al <button> con el atributo id en el valor
+  reset-button.✅
+
+Modelo de caja (box model): border, margen, padding✅
+
+ Las clases css de los <li> hijos del <ul> definen un estilo usando las propiedades del 
+ modelo de caja, (background, border, margin, padding).✅
+
+/* header y footer tienen que ser estilizados con selectores de tipo*/
+header{
+    color: darkmagenta;
+    font: sans-serif;
+    font-size: 25px;
+    text-align: center;   
+}
+h2{
+    margin-left: 200px;
+    color: rgb(204, 135, 206);
+    text-align: left;
+}
+
+.lista {
+    color: black;
+    font-weight: 700;
+    font: black;
+    background: #fcf5fa;
+    padding: 1.0rem 1.2rem;
+    border-radius: 40px;
+    margin-left:10rem;
+    margin-right: 12rem 
+}
+/* el <textarea> tiene que ser estilizado con selectores de atributo usando el atributo name? */
+textarea[name="user-input"] {
+    resize: none;
+    background-color: rgb(249, 237, 249);
+    padding: 1em;
+    border: 1.5px;
+    border-radius: 15px;
+    outline-color: rgb(219, 193, 243);
+    font-style: normal;
+    font-family: sans-serif;
+    line-height: 1.4;
+    width: 500px;
+    height: 250px;
+    display: block;
+    margin: auto;
+}
+
+/* el <button> tiene que ser estilizado con selectores CSS de ID con el atributo id en el valor reset-button */
+#reset-button{
+    background: darkmagenta;
+    color:white;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    display: block;
+    margin: auto; 
+}
+#reset-button:hover{
+background-color: rgb(244, 182, 244);
+}
+
+/* FALTA POR HACER: lograr que cada lista muestre numeros  
+.analisis-lista {
+    border: 3px solid #fcf5fa;
+    border-radius: 20px;
+    padding: 5px;
+    display: block;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+.analisis-lista li{
+    display: flex;
+    margin: 1.5px;
+    padding: 0;
+    align-items: center;
+    line-height: 0.5;
+}
+*/
+footer{
+    font-size: 18px;
+    text-align: left;
+    padding-top: 25px;
+    margin-left: 100px;
+}
