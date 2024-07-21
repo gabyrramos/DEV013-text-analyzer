@@ -1,24 +1,35 @@
 import analyzer from './analyzer.js';
 
-//TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
-let palabras = document.getElementById(word-count)
+//TODO: escuchar eventos del DOM e invocar los métodos del objeto `analyzer`
+const textArea = document.querySelector('textarea[name="user-input"]');
+const resetBoton = document.getElementById('reset-button');
 
-let caracteres = document.getElementById(character-count)
-conteocaracteres = caracteres.lenght;
+textArea.addEventListener("input", function(){
+  const wordCount = analyzer.getWordCount(textArea.value);
+  document.querySelector('li[data-testid="word-count"]').innerHTML = "Numero de palabras:" + wordCount;
 
-let caracteresnoespacio = document.getElementById(character-no-spaces-count)
+  const charCount = analyzer.getCharacterCount(textArea.value);
+  document.querySelector('li[data-testid="character-count"]').innerHTML = "Caracteres:" + charCount;
 
-let contarnumeros = document.getElementById(number-count)
+  const charNoSpace = analyzer.getCharacterCountExcludingSpaces(textArea.value);
+  document.querySelector('li[data-testid="character-no-spaces-count"]').innerHTML = "Caracteres sin espacio:" + charNoSpace;
 
-let sumanumeros = document.getElementById(number-sum)
+  const wordLenghtAve = analyzer.getAverageWordLength(textArea.value);
+  document.querySelector('li[data-testid="word-lenght-average"]').innerHTML = "Promedio longitud de palabras:" + wordLenghtAve;
 
-let promedioespaciopalabras = document.getElementById(word-lenght-average)
+  const numberCount = analyzer.getNumberCount(textArea.value);
+  document.querySelector('li[data-testid="number-count"]').innerHTML = "Recuento de numeros:" + numberCount;
 
+  const numberSum = analyzer.getNumberSum(textArea.value);
+  document.querySelector('li[data-testid="number-sum"]').innerHTML = "Suma total de numeros:" + numberSum;
+  
+})
 
-
-
-let resetearboton= document.getElementById(reset-button)
-resetearboton.addEventListener('click',function value()){
-
-}
-
+resetBoton.addEventListener("click", function(){
+  const textArea = document.querySelector('textarea[name="user-input"]');
+  textArea.value = "";
+  const eventoInput = new InputEvent("input",{
+    value: ""
+  })
+  textArea.dispatchEvent(eventoInput);
+});

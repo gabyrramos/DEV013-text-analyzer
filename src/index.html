@@ -9,34 +9,25 @@
 
 <body>
   <script src="index.js" type="module"></script>
-  <section class="analizador-de-texto">
     <header>
       <h1>Analizador de Texto</h1>
     </header>
+    <!-- elemento text area no puede tener atributos id, ni class.-->
     <textarea name="user-input" placeholder="Escriba aqui..."></textarea>
-    <section class="analisis">
+    <container>
       <h2>Analisis:</h2>
-      <ul class="analisis-lista">
-        <li data-testid="word-count">
-          <p>Numero de palabras:</p>
-        </li>
-        <li data-testid="character-count">
-          <p>Caracteres:</p>
-        </li>
-        <li data-testid="character-no-spaces-count">
-          <p>Caracteres sin espacio:</p>
-        </li>
-        <li data-testid="number-count">
-          <p>Numeros:</p>
-        </li>
-        <li data-testid="number-sum">
-          <p>Suma de numeros:</p>
-        </li>
-        <li data-testid="word-lenght-average">
-          <p>Promedio longitud:</p>
-        </li>
+      <!-- La aplicación usa un <ul> con 6 hijos <li>, uno para mostrar cada métrica. 
+        Para que puedas practicar más, estos elementos no pueden tener atributos id ni name ni hijos.-->
+      <ul>
+        <li class= lista data-testid="word-count">Numero de palabras:  </li>
+        <li class= lista data-testid="character-count">Caracteres: </li>
+        <li class= lista data-testid="character-no-spaces-count">Caracteres sin espacio:</li>
+        <li class= lista data-testid="number-count">Recuento de numeros:</li>
+        <li class= lista data-testid="number-sum">Suma total de numeros:</li>
+        <li class= lista data-testid="word-lenght-average">Promedio longitud de palabras:</li>
       </ul>
-    </section>
+    </container>
+    <section>
       <button id="reset-button">Resetear valores</button>
   </section>
 </body>

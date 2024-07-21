@@ -1,26 +1,42 @@
+/*La aplicación usa selectores CSS de tipo para darle estilo al <header> y al <footer>.✅
+
+ La aplicación usa selectores CSS de class para darle estilo a los <li> descrito anteriormente.✅
+
+ La aplicación usa selectores de atributo para darle estilo al <textarea> usando el atributo name.✅
+
+ La aplicación usa selectores CSS de ID para darle estilo al <button> con el atributo id en el valor
+  reset-button.✅
+
+Modelo de caja (box model): border, margen, padding✅
+
+ Las clases css de los <li> hijos del <ul> definen un estilo usando las propiedades del 
+ modelo de caja, (background, border, margin, padding).✅
 
 /* header y footer tienen que ser estilizados con selectores de tipo*/
-h1{
+header{
     color: darkmagenta;
     font: sans-serif;
-    font-size: 35px;
+    font-size: 25px;
     text-align: center;   
 }
 h2{
-    margin-left: 210px;
+    margin-left: 200px;
     color: rgb(204, 135, 206);
-}
-p{
-    color: rgb(136, 25, 114);
+    text-align: left;
 }
 
-/* los <li> tienen que ser estilizados con selectores de class no por tag? AUN POR ARREGLAR!*/
-li {
-    color:darkmagenta
+.lista {
+    color: black;
+    font-weight: 700;
+    font: black;
+    background: #fcf5fa;
+    padding: 1.0rem 1.2rem;
+    border-radius: 40px;
+    margin-left:10rem;
+    margin-right: 12rem 
 }
-
-/* el <textarea> tiene que ser estilizado con selectores de atributo usando el atributo name? no el tag?*/
-textarea {
+/* el <textarea> tiene que ser estilizado con selectores de atributo usando el atributo name? */
+textarea[name="user-input"] {
     resize: none;
     background-color: rgb(249, 237, 249);
     padding: 1em;
@@ -51,7 +67,7 @@ textarea {
 background-color: rgb(244, 182, 244);
 }
 
-/* FALTA POR HACER: lograr que cada lista muestre numeros */ 
+/* FALTA POR HACER: lograr que cada lista muestre numeros  
 .analisis-lista {
     border: 3px solid #fcf5fa;
     border-radius: 20px;
@@ -67,9 +83,10 @@ background-color: rgb(244, 182, 244);
     align-items: center;
     line-height: 0.5;
 }
-
+*/
 footer{
-    font-size: 20px;
-    text-align: right;
-    margin-right: 50px;
+    font-size: 18px;
+    text-align: left;
+    padding-top: 25px;
+    margin-left: 100px;
 }
